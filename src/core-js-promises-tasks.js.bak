@@ -20,9 +20,9 @@
 function getPromise(number) {
   const promise = new Promise((resolve, reject) => {
     if (number >= 0) {
-      resolve(number);
+      return resolve(number);
     }
-    reject(number);
+    return reject(number);
   });
   return promise;
 }
